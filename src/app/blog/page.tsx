@@ -1,9 +1,13 @@
+import { notFound } from "next/navigation";
 import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
-import { baseURL, blog, person, newsletter } from "@/resources";
+import { baseURL, blog, person, newsletter, routes } from "@/resources";
 
 export async function generateMetadata() {
+  // A disabled route must not publish metadata – otherwise crawlers index it
+  if (!routes["/blog"]) return {};
+
   return Meta.generate({
     title: blog.title,
     description: blog.description,
@@ -14,6 +18,8 @@ export async function generateMetadata() {
 }
 
 export default function Blog() {
+  if (!routes["/blog"]) notFound();
+
   return (
     <Column maxWidth="m" paddingTop="24">
       <Schema

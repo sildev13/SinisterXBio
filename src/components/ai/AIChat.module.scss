@@ -1,0 +1,42 @@
+.launcher {
+  position: fixed;
+  right: var(--static-space-24);
+  bottom: var(--static-space-24);
+  z-index: 10;
+}
+
+.panel {
+  position: fixed;
+  right: var(--static-space-24);
+  bottom: calc(var(--static-space-24) + 4rem);
+  width: 24rem;
+  max-width: calc(100vw - var(--static-space-32));
+  max-height: min(32rem, calc(100vh - 10rem));
+  z-index: 10;
+}
+
+.messages {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.bubble {
+  max-width: 85%;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  .panel {
+    right: var(--static-space-12);
+    left: var(--static-space-12);
+    bottom: calc(var(--static-space-12) + 4rem);
+    width: auto;
+    max-width: none;
+  }
+
+  .launcher {
+    right: var(--static-space-12);
+    bottom: var(--static-space-12);
+  }
+}

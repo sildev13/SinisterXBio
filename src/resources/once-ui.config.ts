@@ -14,7 +14,8 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "http://103.216.159.28:3001/about";
+// Origin only – no trailing path or slash. Page paths get appended to this.
+const baseURL: string = "https://suphason.space";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -22,7 +23,8 @@ const routes: RoutesConfig = {
   "/work": true,
   "/blog": false,
   "/gallery": true,
-  "/certificates": true
+  "/certificates": true,
+  "/contact": true,
 };
 
 const display: DisplayConfig = {
@@ -34,7 +36,8 @@ const display: DisplayConfig = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  // Add a path here to password-protect it, e.g. "/work/my-private-project": true
+  // Requires PAGE_ACCESS_PASSWORD to be set in .env
 };
 
 // Import and set font for each variant
@@ -197,7 +200,7 @@ const schema: SchemaConfig = {
 // social links
 const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@sinnakup",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
+  instagram: "https://www.instagram.com/sinnakup/",
   discord: "https://discord.com/invite/2544",
 };
 

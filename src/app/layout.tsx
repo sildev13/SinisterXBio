@@ -13,8 +13,8 @@ import {
   RevealFx,
   SpacingToken,
 } from "@once-ui-system/core";
-import { Footer, Header, RouteGuard, Providers } from "@/components";
-import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
+import { AIChat, Footer, Header, RouteGuard, Providers } from "@/components";
+import { ai, baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -163,6 +163,7 @@ export default async function RootLayout({
             </Flex>
           </Flex>
           <Footer />
+          {ai.display && <AIChat />}
         </Column>
       </Providers>
     </Flex>

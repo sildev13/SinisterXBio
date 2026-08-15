@@ -16,6 +16,97 @@ const certificates: any = { // ใช้ any ไว้ก่อนถ้าย�
   label: "Certificates",
   path: "/certificates",
   display: true,
+  items: [
+    {
+      title: "Chinese Speech Geade 4-6",
+      description: "รางวัลชนะเลิศ การแข่งขันพูดภาษาจีน ป5 โรงเรียนอนุบาลไทรโยค",
+      date: "25 December 2023",
+      image: "/images/certificates/Card1.png",
+    },
+    {
+      title: "แข่งหุ่นยนต์ Microbit",
+      description: "ระดับชั้น ม.1 รางวัลชนะเลิศ โรงเรียน DSKRU",
+      date: "13 สิงหาคม 2569",
+      image: "/images/certificates/Card10.png",
+    },
+    {
+      title: "อบรมหุ่นยนต์ Microbit",
+      description: "ระดับชั้น ม.1 โรงเรียน DSKRU",
+      date: "13 สิงหาคม 2569",
+      image: "/images/certificates/Card11.png",
+    },
+    {
+      title: "การแข่งขันพูดภาษาจีน ป.6",
+      description:
+        "รางวัลเหรียญทอง การแข่งขันพูดภาษาจีน ป6 โรงเรียนอนุบาลไทรโยคระดับเครือข่ายท่าเสา-วังกระแจะ",
+      date: "18 พฤศจิกายน 2568",
+      image: "/images/certificates/Card2.png",
+    },
+    {
+      title: "การแข่งขัน Spelling Bee ป.6",
+      description:
+        "รางวัลรองชนะเลิศอันดับที่1 การแข่งขัน Spelling Bee ป6 โรงเรียนไทรโยคน้อยวิทยา Open House",
+      date: "11 กุมภาพันธ์ 2569",
+      image: "/images/certificates/Card3.png",
+    },
+    {
+      title: "โครงการสอบ Top Test Center",
+      description: "ระดับชั้น ป.3 ทำคะแนนได้ 104 คะแนน จาก 150 คะแนน เป็น อันดับที่ 180 จาก 268 คน",
+      date: "10 มีนาคม 2566",
+      image: "/images/certificates/Card4.png",
+    },
+    {
+      title: "กิจกรรม การแข่งขัน Tiktok",
+      description: "กิจกรรม การแข่งขัน Tiktok วรรคทองวรรณคดีสุนทรภู่ ยอดไลก์สูงสุด",
+      date: "26 มิถุนายน 2567",
+      image: "/images/certificates/Card5.png",
+    },
+    {
+      title: "การแข่งขันพูดภาษาจีน ป.4",
+      description:
+        "รางวัลชนะเลิศ การแข่งขันพูดภาษาจีน ป4 โรงเรียนอนุบาลไทรโยคระดับ เขตพื่นที่การศึกษากาญจนบุรีเขต 3",
+      date: "9 ธันวาคม 2566",
+      image: "/images/certificates/Card6.png",
+    },
+    {
+      title: "โครงการสอบ Top Test Center",
+      description:
+        "ระดับชั้น ป.3 ทำคะแนนได้ 305 คะแนน จาก 500 คะแนน เป็น อันดับที่ 68 จาก 91 คน วิชา ภาษาอังกฤษ",
+      date: "10 มีนาคม 2566",
+      image: "/images/certificates/Card7.png",
+    },
+    {
+      title: "การแข่งขันเปืดพจนานุกรม ป.6",
+      description: "ได้เข้ารวมกิจกรรมการแข่งขันเปิดพจนานุกรม ใน วันภาษาไทยแห่งชาติ",
+      date: "2 มกราคม 2568",
+      image: "/images/certificates/Card8.png",
+    },
+    {
+      title: "โครงการสอบ Top Test Center",
+      description:
+        "ระดับชั้น ป.3 ทำคะแนนได้ 140 คะแนน จาก 200 คะแนน เป็น อันดับที่ 124 จาก 176 คน วิชา วิทยาศาสตร์",
+      date: "10 มีนาคม 2566",
+      image: "/images/certificates/Card9.png",
+    },
+  ],
+};
+
+const ai = {
+  // Floating assistant shown on every page. Powered by Gemini via /api/chat
+  display: true,
+  label: "Ask AI",
+  placeholder: "Ask about Sin...",
+  greeting:
+    "Hi! I'm Sin's AI assistant. Ask me about his projects, skills or experience — in Thai or English.",
+};
+
+const contact = {
+  path: "/contact",
+  label: "Contact",
+  title: `Contact – ${person.name}`,
+  description: `Send a message to ${person.name}`,
+  headline: "Get in touch",
+  subline: "Send me a message and it lands straight in my Discord. I usually reply within a day.",
 };
 
 const newsletter: Newsletter = {
@@ -128,7 +219,7 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/Screenshot 2026-04-05 191420.png",
+            src: "/images/projects/project-01/Screenshot 2026-04-06 104532.png",
             alt: "Young2544 Project",
             width: 16,
             height: 9,
@@ -284,4 +375,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery, certificates};
+export { person, social, newsletter, home, about, blog, work, gallery, certificates, contact, ai };

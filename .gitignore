@@ -35,3 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.tsnode_modules 
 .next 
+
+# local env files (contains secrets - never commit)
+.env

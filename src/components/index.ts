@@ -8,3 +8,5 @@ export { Providers } from "@/components/Providers";
 export { ScrollToHash } from "@/components/ScrollToHash";
 export { ThemeToggle } from "@/components/ThemeToggle";
 export { CustomMDX } from "@/components/mdx";
+export { ContactForm } from "@/components/contact/ContactForm";
+export { AIChat } from "@/components/ai/AIChat";

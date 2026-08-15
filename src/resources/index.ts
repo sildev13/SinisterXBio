@@ -9,6 +9,8 @@ export {
   work,
   gallery,
   certificates,
+  contact,
+  ai,
 } from "./content";
 
 export {
